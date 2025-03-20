@@ -74,7 +74,7 @@
 
             if (input.files.length > 0) {
                 let file = input.files[0];
-                label.value = file.name;  // Show file name
+                label.value = file.name;// Show file name
 
                 // Show image preview
                 let reader = new FileReader();
