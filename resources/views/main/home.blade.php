@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title class="font-mirza">خانه</title>
     @include('main.links')
+    <script src="{{ asset('js/app.js') }}"></script>
     <style>
         [x-cloak] {
             display: none !important;
@@ -400,16 +401,16 @@
             </div>
         </div>
 
-        <!-- First Slider Buttons -->
         <button onclick="moveSlide('slider1', -1)"
-            class="hidden md:flex absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-black p-3 rounded-md shadow-lg">
+            class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-black p-3 rounded-md shadow-lg flex">
             <i class="fas fa-chevron-left text-xl cursor-pointer"></i>
         </button>
 
         <button onclick="moveSlide('slider1', 1)"
-            class="hidden md:flex absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black p-3 rounded-md shadow-lg">
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black p-3 rounded-md shadow-lg flex">
             <i class="fas fa-chevron-right text-xl cursor-pointer"></i>
         </button>
+
 
     </div>
 
@@ -736,18 +737,21 @@
 
 
         </div>
+
+
         <!-- Second Slider Buttons -->
         <button onclick="moveSlide('slider2', -1)"
-            class="hidden md:flex absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-black p-3 rounded-md shadow-lg">
+            class="absolute left-2 top-1/4 transform -translate-y-1/2 bg-white text-black p-3 rounded-md shadow-lg flex">
             <i class="fas fa-chevron-left text-xl cursor-pointer"></i>
         </button>
 
         <button onclick="moveSlide('slider2', 1)"
-            class="hidden md:flex absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black p-3 rounded-md shadow-lg">
+            class="absolute right-2 top-1/4 transform -translate-y-1/2 bg-white text-black p-3 rounded-md shadow-lg flex">
             <i class="fas fa-chevron-right text-xl cursor-pointer"></i>
         </button>
 
         <script>
+            // Function to move the slider
             function moveSlide(sliderId, direction) {
                 let slider = document.getElementById(sliderId);
                 if (slider) {
@@ -761,7 +765,7 @@
             }
         </script>
 
-
+   @include('main.footer')
 
 </body>
 
